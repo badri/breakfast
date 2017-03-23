@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Annotation\Breakfast.
- */
-
 namespace Drupal\breakfast\Annotation;
 
 use Drupal\Component\Annotation\Plugin;
@@ -26,8 +21,6 @@ class Breakfast extends Plugin {
   /**
    * The human-readable name of the breakfast.
    *
-   * @ingroup plugin_translatable
-   *
    * @var \Drupal\Core\Annotation\Translation
    */
   public $label;
@@ -46,5 +39,6 @@ class Breakfast extends Plugin {
    *
    * @var array
    */
-  public $ingredients = array();
+  public $ingredients = [];
+
 }

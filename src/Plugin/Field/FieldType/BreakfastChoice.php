@@ -1,14 +1,8 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\breakfast\Plugin\Field\FieldType\BreakfastChoice.
- */
-
 namespace Drupal\breakfast\Plugin\Field\FieldType;
 
 use Drupal\Core\Field\FieldItemBase;
-use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\TypedData\DataDefinition;
 
@@ -25,19 +19,20 @@ use Drupal\Core\TypedData\DataDefinition;
  * )
  */
 class BreakfastChoice extends FieldItemBase {
+
   /**
    * {@inheritdoc}
    */
   public static function schema(FieldStorageDefinitionInterface $field_definition) {
-    return array(
-      'columns' => array(
-        'value' => array(
+    return [
+      'columns' => [
+        'value' => [
           'type' => 'text',
           'size' => 'tiny',
           'not null' => FALSE,
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
   /**
@@ -57,4 +52,5 @@ class BreakfastChoice extends FieldItemBase {
 
     return $properties;
   }
+
 }

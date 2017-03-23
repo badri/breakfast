@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Plugin\Derivative\Sweets.
- */
-
 namespace Drupal\breakfast\Plugin\Derivative;
 
 use Drupal\Component\Plugin\Derivative\DeriverBase;
@@ -24,13 +19,14 @@ class Sweets extends DeriverBase {
 
     foreach ($sweets as $key => $sweet) {
       $this->derivatives[$key] = $base_plugin_definition;
-      $this->derivatives[$key] += array(
+      $this->derivatives[$key] += [
         'label' => $sweet['label'],
         'image' => $sweet['image'],
         'ingredients' => $sweet['ingredients'],
-      );
+      ];
     }
 
     return $this->derivatives;
   }
+
 }

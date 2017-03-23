@@ -1,14 +1,7 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Plugin\Breakfast\Sweet.
- */
-
 namespace Drupal\breakfast\Plugin\Breakfast;
 
-use Drupal\Core\Annotation\Translation;
-use Drupal\Component\Annotation\Plugin;
 use Drupal\breakfast\BreakfastBase;
 
 /**
@@ -21,7 +14,9 @@ use Drupal\breakfast\BreakfastBase;
  * )
  */
 class Sweet extends BreakfastBase {
+
   public function servedWith() {
-    return array();
+    return [];
   }
+
 }

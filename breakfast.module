@@ -10,9 +10,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-
-function breakfast_help($route_name, RouteMatchInterface $route_match)
-{
+function breakfast_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the breakfast module.
     case 'help.page.breakfast':
@@ -20,16 +18,13 @@ function breakfast_help($route_name, RouteMatchInterface $route_match)
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Select what you want for breakfast') . '</p>';
       return $output;
-    break;
   }
 }
 
 /**
  * Implements hook_theme().
  */
-
-function breakfast_theme()
-{
+function breakfast_theme() {
   $theme = [];
 
   return $theme;

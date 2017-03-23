@@ -1,14 +1,7 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Plugin\Breakfast\MasalaDosa.
- */
-
 namespace Drupal\breakfast\Plugin\Breakfast;
 
-use Drupal\Core\Annotation\Translation;
-use Drupal\Component\Annotation\Plugin;
 use Drupal\breakfast\BreakfastBase;
 
 /**
@@ -28,7 +21,12 @@ use Drupal\breakfast\BreakfastBase;
  * )
  */
 class MasalaDosa extends BreakfastBase {
+
   public function servedWith() {
-    return array("Sambar", "Coriander Chutney");
+    return [
+      "Sambar",
+      "Coriander Chutney",
+    ];
   }
+
 }
