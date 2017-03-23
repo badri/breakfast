@@ -1,14 +1,7 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Plugin\Breakfast\Idly.
- */
-
 namespace Drupal\breakfast\Plugin\Breakfast;
 
-use Drupal\Core\Annotation\Translation;
-use Drupal\Component\Annotation\Plugin;
 use Drupal\breakfast\BreakfastBase;
 
 /**
@@ -26,7 +19,14 @@ use Drupal\breakfast\BreakfastBase;
  * )
  */
 class Idly extends BreakfastBase {
+
   public function servedWith() {
-    return array("Sambar", "Coconut Chutney", "Onion Chutney", "Idli podi");
+    return [
+      "Sambar",
+      "Coconut Chutney",
+      "Onion Chutney",
+      "Idli podi",
+    ];
   }
+
 }

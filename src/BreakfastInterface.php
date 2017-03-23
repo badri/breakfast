@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Provides Drupal\breakfast\BreakfastInterface
- */
-
 namespace Drupal\breakfast;
 
 use Drupal\Component\Plugin\PluginInspectionInterface;
@@ -34,4 +29,5 @@ interface BreakfastInterface extends PluginInspectionInterface {
    * @return array
    */
   public function servedWith();
+
 }

@@ -1,14 +1,7 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\breakfast\Plugin\Breakfast\Uppuma.
- */
-
 namespace Drupal\breakfast\Plugin\Breakfast;
 
-use Drupal\Core\Annotation\Translation;
-use Drupal\Component\Annotation\Plugin;
 use Drupal\breakfast\BreakfastBase;
 
 /**
@@ -28,7 +21,12 @@ use Drupal\breakfast\BreakfastBase;
  * )
  */
 class Uppuma extends BreakfastBase {
+
   public function servedWith() {
-    return array("Lemon pickle", "Coconut Chutney");
+    return [
+      "Lemon pickle",
+      "Coconut Chutney",
+    ];
   }
+
 }
